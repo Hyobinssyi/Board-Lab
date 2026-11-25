@@ -31,3 +31,6 @@ export function likePost(post) {
 export function deletePost(id) {
   return request(`/posts/${id}`, { method: 'DELETE' });
 }
+export function fetchAllPosts() {
+  return request('/posts?_sort=id&_order=desc');
+}

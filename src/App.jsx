@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header.jsx';
 import PostList from './components/PostList.jsx';
 import PostForm from './components/PostForm.jsx';
+import QuickView from './components/QuickView.jsx';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         </button>
         
       </div>
+      <QuickView></QuickView>
       <PostForm />
       {showList && <PostList />}
     </main>
